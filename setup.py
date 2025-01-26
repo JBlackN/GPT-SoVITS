@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='GPT-SoVITS-WebUI',
-    version='b7a904a67153170d334fdc0d7fbae220ee21f0e9',  # Update version number as needed
+    version='0.0.1',  # Update version number as needed
     description='A Powerful Few-shot Voice Conversion and Text-to-Speech WebUI.',
     author='RVC-Boss',
     url='https://github.com/JBlackN/GPT-SoVITS',
