@@ -6,7 +6,7 @@ setup(
     description='A Powerful Few-shot Voice Conversion and Text-to-Speech WebUI.',
     author='RVC-Boss',
     url='https://github.com/JBlackN/GPT-SoVITS',
-    packages=find_packages(),
+    packages=find_namespace_packages(include=['GPT_SoVITS', 'GPT_SoVITS.*']),
     include_package_data=True,
     install_requires=[
         'numpy==1.23.4',
