@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='GPT-SoVITS-WebUI',
+    name='gpt_sovits',
     version='0.0.1',  # Update version number as needed
     description='A Powerful Few-shot Voice Conversion and Text-to-Speech WebUI.',
     author='RVC-Boss',
