@@ -47,7 +47,7 @@ setup(
         'non_darwin': ['onnxruntime-gpu'],
         'non_linux': ['opencc'],
         'non_windows': ['python_mecab_ko']
-    }
+    },
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',  # Update based on actual license
