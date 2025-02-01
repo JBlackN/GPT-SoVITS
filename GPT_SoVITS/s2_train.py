@@ -1,6 +1,6 @@
 import warnings
 warnings.filterwarnings("ignore")
-import utils, os
+import GPT_SoVITS.utils, os
 hps = utils.get_hparams(stage=2)
 os.environ["CUDA_VISIBLE_DEVICES"] = hps.train.gpu_numbers.replace("-", ",")
 import torch
