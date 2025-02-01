@@ -8,6 +8,9 @@ setup(
     url='https://github.com/JBlackN/GPT-SoVITS',
     packages=find_namespace_packages(include=['GPT_SoVITS', 'GPT_SoVITS.*', 'tools', 'tools.*']),
     include_package_data=True,
+    package_data={
+        'tools.i18n': ['locale/*.json'],
+    },
     install_requires=[
         'numpy==1.23.4',
         'scipy',
