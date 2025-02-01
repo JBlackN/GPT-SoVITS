@@ -9,6 +9,7 @@ setup(
     packages=find_namespace_packages(include=['GPT_SoVITS', 'GPT_SoVITS.*', 'tools', 'tools.*']),
     include_package_data=True,
     package_data={
+        'GPT_SoVITS.*': ['*', '**/*'],
         'tools.i18n': ['locale/*.json'],
     },
     install_requires=[
