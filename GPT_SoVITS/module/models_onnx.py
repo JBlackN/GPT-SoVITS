@@ -13,9 +13,9 @@ from torch.nn import Conv1d, ConvTranspose1d, AvgPool1d, Conv2d
 from torch.nn.utils import weight_norm, remove_weight_norm, spectral_norm
 from module.commons import init_weights, get_padding
 from module.quantize import ResidualVectorQuantizer
-# from text import symbols
-from text import symbols as symbols_v1
-from text import symbols2 as symbols_v2
+# from GPT_SoVITS.text import symbols
+from GPT_SoVITS.text import symbols as symbols_v1
+from GPT_SoVITS.text import symbols2 as symbols_v2
 from torch.cuda.amp import autocast
 
 
