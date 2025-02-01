@@ -83,12 +83,12 @@ from feature_extractor import cnhubert
 
 cnhubert.cnhubert_base_path = cnhubert_base_path
 
-from module.models import SynthesizerTrn
+from GPT_SoVITS.module.models import SynthesizerTrn
 from GPT_SoVITS.AR.models.t2s_lightning_module import Text2SemanticLightningModule
 from GPT_SoVITS.text import cleaned_text_to_sequence
 from GPT_SoVITS.text.cleaner import clean_text
 from time import time as ttime
-from module.mel_processing import spectrogram_torch
+from GPT_SoVITS.module.mel_processing import spectrogram_torch
 from tools.my_utils import load_audio
 from tools.i18n.i18n import I18nAuto, scan_language_list
 
