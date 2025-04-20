@@ -19,7 +19,7 @@ import traceback
 import os.path
 from glob import glob
 from tqdm import tqdm
-from text.cleaner import clean_text
+from GPT_SoVITS.text.cleaner import clean_text
 from transformers import AutoModelForMaskedLM, AutoTokenizer
 from tools.my_utils import clean_path
 

@@ -5,7 +5,7 @@ from jamo import h2j, j2hcj
 import ko_pron
 from g2pk2 import G2p
 
-from text.symbols2 import symbols 
+from GPT_SoVITS.text.symbols2 import symbols 
 
 # This is a list of Korean classifiers preceded by pure Korean numerals.
 _korean_classifiers = (

@@ -10,7 +10,7 @@ sys.path.append(now_dir)
 import re
 import torch
 import LangSegment
-from text import chinese
+from GPT_SoVITS.text import chinese
 from typing import Dict, List, Tuple
 from GPT_SoVITS.text.cleaner import clean_text
 from GPT_SoVITS.text import cleaned_text_to_sequence
