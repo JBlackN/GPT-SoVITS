@@ -12,8 +12,8 @@ from f5_tts.model import DiT
 
 from torch.nn import Conv1d, ConvTranspose1d, Conv2d
 from torch.nn.utils import weight_norm, remove_weight_norm, spectral_norm
-from module.commons import init_weights, get_padding
-from module.quantize import ResidualVectorQuantizer
+from GPT_SoVITS.module.commons import init_weights, get_padding
+from GPT_SoVITS.module.quantize import ResidualVectorQuantizer
 # from GPT_SoVITS.text import symbols
 from text import symbols as symbols_v1
 from text import symbols2 as symbols_v2

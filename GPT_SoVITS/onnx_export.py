@@ -1,9 +1,9 @@
-from module.models_onnx import SynthesizerTrn, symbols_v1, symbols_v2
+from GPT_SoVITS.module.models_onnx import SynthesizerTrn, symbols_v1, symbols_v2
 from GPT_SoVITS.AR.models.t2s_lightning_module_onnx import Text2SemanticLightningModule
 import torch
 import torchaudio
 from feature_extractor import cnhubert
-from module.models_onnx import SynthesizerTrn, symbols_v1, symbols_v2
+from GPT_SoVITS.module.models_onnx import SynthesizerTrn, symbols_v1, symbols_v2
 from torch import nn
 
 cnhubert_base_path = "GPT_SoVITS/pretrained_models/chinese-hubert-base"

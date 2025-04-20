@@ -163,11 +163,11 @@ from transformers import AutoModelForMaskedLM, AutoTokenizer
 import numpy as np
 from feature_extractor import cnhubert
 from io import BytesIO
-from module.models import SynthesizerTrn
+from GPT_SoVITS.module.models import SynthesizerTrn
 from GPT_SoVITS.AR.models.t2s_lightning_module import Text2SemanticLightningModule
 from text import cleaned_text_to_sequence
 from text.cleaner import clean_text
-from module.mel_processing import spectrogram_torch
+from GPT_SoVITS.module.mel_processing import spectrogram_torch
 from tools.my_utils import load_audio
 import config as global_config
 import logging
@@ -225,7 +225,7 @@ def resample(audio_tensor, sr0):
     return resample_transform_dict[sr0](audio_tensor)
 
 
-from module.mel_processing import mel_spectrogram_torch
+from GPT_SoVITS.module.mel_processing import mel_spectrogram_torch
 
 spec_min = -12
 spec_max = 2

@@ -24,17 +24,17 @@ logging.getLogger("numba").setLevel(logging.INFO)
 from collections import OrderedDict as od
 from random import randint
 
-from module import commons
-from module.data_utils import (
+from GPT_SoVITS.module import commons
+from GPT_SoVITS.module.data_utils import (
     DistributedBucketSampler,
 )
-from module.data_utils import (
+from GPT_SoVITS.module.data_utils import (
     TextAudioSpeakerCollateV3 as TextAudioSpeakerCollate,
 )
-from module.data_utils import (
+from GPT_SoVITS.module.data_utils import (
     TextAudioSpeakerLoaderV3 as TextAudioSpeakerLoader,
 )
-from module.models import (
+from GPT_SoVITS.module.models import (
     SynthesizerTrnV3 as SynthesizerTrn,
 )
 from peft import LoraConfig, get_peft_model

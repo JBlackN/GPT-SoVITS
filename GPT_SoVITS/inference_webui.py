@@ -100,12 +100,12 @@ from transformers import AutoModelForMaskedLM, AutoTokenizer
 
 cnhubert.cnhubert_base_path = cnhubert_base_path
 
-from module.models import SynthesizerTrn
+from GPT_SoVITS.module.models import SynthesizerTrn
 from GPT_SoVITS.AR.models.t2s_lightning_module import Text2SemanticLightningModule
 from text import cleaned_text_to_sequence
 from text.cleaner import clean_text
 from time import time as ttime
-from module.mel_processing import spectrogram_torch
+from GPT_SoVITS.module.mel_processing import spectrogram_torch
 from tools.my_utils import load_audio
 from tools.i18n.i18n import I18nAuto, scan_language_list
 
@@ -528,7 +528,7 @@ def get_phones_and_bert(text,language,version,final=False):
     return phones, bert.to(dtype), norm_text
 
 
-from module.mel_processing import mel_spectrogram_torch, spectrogram_torch
+from GPT_SoVITS.module.mel_processing import mel_spectrogram_torch, spectrogram_torch
 
 spec_min = -12
 spec_max = 2
