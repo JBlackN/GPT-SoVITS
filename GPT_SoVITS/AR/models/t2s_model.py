@@ -1,6 +1,7 @@
 # modified from https://github.com/yangdongchao/SoundStorm/blob/master/soundstorm/s1/AR/models/t2s_model.py
 # reference: https://github.com/lifeiteng/vall-e
 import math
+import torch
 from typing import List, Optional
 
 from GPT_SoVITS.AR.models.utils import make_pad_mask, make_pad_mask_left
