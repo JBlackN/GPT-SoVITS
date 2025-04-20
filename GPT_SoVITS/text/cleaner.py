@@ -69,11 +69,7 @@ def clean_special(text, language, special_s, target_symbol, version=None):
     特殊静音段sp符号处理
     """
     text = text.replace(special_s, ",")
-<<<<<<< HEAD
     language_module = __import__("GPT_SoVITS.text."+language_module_map[language],fromlist=[language_module_map[language]])
-=======
-    language_module = __import__("text." + language_module_map[language], fromlist=[language_module_map[language]])
->>>>>>> main
     norm_text = language_module.text_normalize(text)
     phones = language_module.g2p(norm_text)
     new_ph = []
