@@ -3,8 +3,8 @@
 import math
 from typing import List, Optional
 
-from AR.models.utils import make_pad_mask, make_pad_mask_left
-from AR.models.utils import (
+from GPT_SoVITS.AR.models.utils import make_pad_mask, make_pad_mask_left
+from GPT_SoVITS.AR.models.utils import (
     topk_sampling,
     sample,
     logits_to_probs,
@@ -13,11 +13,11 @@ from AR.models.utils import (
     make_reject_y,
     get_batch_logps
 )
-from AR.modules.embedding import SinePositionalEmbedding
-from AR.modules.embedding import TokenEmbedding
-from AR.modules.transformer import LayerNorm
-from AR.modules.transformer import TransformerEncoder
-from AR.modules.transformer import TransformerEncoderLayer
+from GPT_SoVITS.AR.modules.embedding import SinePositionalEmbedding
+from GPT_SoVITS.AR.modules.embedding import TokenEmbedding
+from GPT_SoVITS.AR.modules.transformer import LayerNorm
+from GPT_SoVITS.AR.modules.transformer import TransformerEncoder
+from GPT_SoVITS.AR.modules.transformer import TransformerEncoderLayer
 from torch import nn
 from torch.nn import functional as F
 from torchmetrics.classification import MulticlassAccuracy
