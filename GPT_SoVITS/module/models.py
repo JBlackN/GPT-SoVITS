@@ -1148,7 +1148,7 @@ class SynthesizerTrnV3(nn.Module):
         self.linear_mel = nn.Conv1d(inter_channels2, 100, 1, stride=1)
         self.cfm = CFM(
             100,
-            DiT(**dict(dim=1024, depth=22, heads=16, ff_mult=2, text_dim=inter_channels2, conv_layers=4)),
+            torch.DiT(**dict(dim=1024, depth=22, heads=16, ff_mult=2, text_dim=inter_channels2, conv_layers=4)),
         )  # text_dim is condition feature dim
         if self.freeze_quantizer == True:
             set_no_grad(self.ssl_proj)
@@ -1304,7 +1304,7 @@ class SynthesizerTrnV3b(nn.Module):
         self.linear_mel = nn.Conv1d(inter_channels2, 100, 1, stride=1)
         self.cfm = CFM(
             100,
-            DiT(**dict(dim=1024, depth=22, heads=16, ff_mult=2, text_dim=inter_channels2, conv_layers=4)),
+            torch.DiT(**dict(dim=1024, depth=22, heads=16, ff_mult=2, text_dim=inter_channels2, conv_layers=4)),
         )  # text_dim is condition feature dim
 
     def forward(self, ssl, y, mel, ssl_lengths, y_lengths, text, text_lengths, mel_lengths):  # ssl_lengths no need now
