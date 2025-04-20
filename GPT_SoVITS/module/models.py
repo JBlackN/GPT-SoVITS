@@ -4,13 +4,13 @@ warnings.filterwarnings("ignore")
 import math
 
 import torch
-from torch import DiT, nn
+from torch import nn
 from torch.nn import functional as F
 
 from GPT_SoVITS.module import commons
 from GPT_SoVITS.module import modules
 from GPT_SoVITS.module import attentions
-
+from f5_tts.model import DiT
 from torch.nn import Conv1d, ConvTranspose1d, AvgPool1d, Conv2d
 from torch.nn.utils import weight_norm, remove_weight_norm, spectral_norm
 from GPT_SoVITS.module.commons import init_weights, get_padding
