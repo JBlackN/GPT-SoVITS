@@ -28,7 +28,7 @@ from peft import LoraConfig, get_peft_model
 from process_ckpt import get_sovits_version_from_path_fast, load_sovits_new
 from transformers import AutoModelForMaskedLM, AutoTokenizer
 
-from AR.models.t2s_lightning_module import Text2SemanticLightningModule
+from GPT_SoVITS.AR.models.t2s_lightning_module import Text2SemanticLightningModule
 from feature_extractor.cnhubert import CNHubert
 from time import time as ttime
 from tools.i18n.i18n import I18nAuto, scan_language_list
