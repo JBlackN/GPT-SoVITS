@@ -29,7 +29,7 @@ import re
 import sys
 
 import torch
-from text.LangSegmenter import LangSegmenter
+from GPT_SoVITS.text.LangSegmenter import LangSegmenter
 
 try:
     import gradio.analytics as analytics
@@ -124,10 +124,10 @@ def set_seed(seed):
 
 from time import time as ttime
 
-from AR.models.t2s_lightning_module import Text2SemanticLightningModule
+from GPT_SoVITS.AR.models.t2s_lightning_module import Text2SemanticLightningModule
 from peft import LoraConfig, get_peft_model
-from text import cleaned_text_to_sequence
-from text.cleaner import clean_text
+from GPT_SoVITS.text import cleaned_text_to_sequence
+from GPT_SoVITS.text.cleaner import clean_text
 
 from tools.i18n.i18n import I18nAuto, scan_language_list
 
@@ -518,7 +518,7 @@ def get_first(text):
     return text
 
 
-from text import chinese
+from GPT_SoVITS.text import chinese
 
 
 def get_phones_and_bert(text, language, version, final=False):
@@ -587,7 +587,7 @@ def get_phones_and_bert(text, language, version, final=False):
     return phones, bert.to(dtype), norm_text
 
 
-from module.mel_processing import mel_spectrogram_torch, spectrogram_torch
+from GPT_SoVITS.module.mel_processing import mel_spectrogram_torch, spectrogram_torch
 
 spec_min = -12
 spec_max = 2
